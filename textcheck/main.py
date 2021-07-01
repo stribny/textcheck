@@ -28,3 +28,8 @@ def spellcheck(files: list[str]):
                 misspelled.word, ", ".join(misspelled.suggestions), misspelled.context
             )
         console.print(table)
+
+
+@app.callback()
+def callback():
+    pass
