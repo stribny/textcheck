@@ -1,6 +1,6 @@
 # textcheck
 
-Example:
+Run text checks on files from the command line.
 
 ```
 ┏━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -9,7 +9,22 @@ Example:
 │ speling │ spieling, spelling, spewing, peeling, splinting │ should be checked for speling │
 └─────────┴─────────────────────────────────────────────────┴───────────────────────────────┘
 ```
-
 ## Installation
 
-`en_US.dic` and `en_US.aff` files need to be placed in `/usr/share/hunspell` directory.
+Hunspell dictionary files `en_US.dic` and `en_US.aff` need to be placed in `/usr/share/hunspell` directory.
+
+## CLI usage
+
+### `spellcheck`
+
+Run spellcheck for a set of files
+
+**Usage**:
+
+```console
+$ textcheck spellcheck [OPTIONS] FILES...
+```
+
+**Arguments**:
+
+* `FILES...`: [required]
