@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "textcheck"
-version = "0.2.1"
+version = "0.2.2"
 description = "Check text files for issues."
 authors = ["Petr Stribny <petr@stribny.name>"]
 license = "MIT"
