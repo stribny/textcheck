@@ -20,3 +20,14 @@ def test_should_ignore_special_characters():
     misspellings = spellcheck.check(input, [])
 
     assert len(misspellings) == 0
+
+
+def test_should_accept_ignore_list():
+    input = """
+    This text should be checked for mispelling.
+    """
+    ignore_list = ["mispelling"]
+
+    misspellings = spellcheck.check(input, ignore_list)
+
+    assert len(misspellings) == 0
